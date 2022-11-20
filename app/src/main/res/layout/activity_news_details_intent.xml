@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".NewsDetailsIntent">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolber_intent"
+        android:background="@color/Charcol"
+
+        android:title="News App"
+        android:titleTextColor="@color/yellow"
+        
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button"
+        android:layout_below="@id/toolber_intent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/image_intent"
+                android:layout_margin="3dp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/intent_header"
+                android:text="Header"
+                android:textSize="20sp"
+                android:textColor="@color/yellow"
+                android:layout_below="@+id/image_intent"
+                android:layout_margin="3dp"
+                android:padding="3dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Sub_intent"
+                android:text="Sub Header"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_below="@id/intent_header"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                />
+            <TextView
+                android:id="@+id/full_sub_intent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/Sub_intent"
+            android:layout_margin="3dp"
+            android:padding="4dp"
+            android:text="Content"
+            android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_margin="12dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Read full news"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        />
+    
+
+</RelativeLayout>
