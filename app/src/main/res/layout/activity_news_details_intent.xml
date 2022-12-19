@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/toolber_intent"
         android:background="@color/Charcol"
-
         android:title="News App"
-        android:titleTextColor="@color/yellow"
+        android:titleTextColor="@color/white"
+
         
         />
     <ScrollView
@@ -78,11 +78,11 @@
         android:layout_alignParentBottom="true"
         android:padding="5dp"
         android:layout_margin="12dp"
-        android:backgroundTint="@color/yellow"
+        android:backgroundTint="@color/design_default_color_primary"
         android:text="Read full news"
         android:layout_marginBottom="20dp"
-        android:textColor="@color/black"
-        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         />
     
 
